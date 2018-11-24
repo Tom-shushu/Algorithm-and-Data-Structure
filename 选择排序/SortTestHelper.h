@@ -1,4 +1,4 @@
-#ifndef INC_03_SELECTION_SORT_DETECT_PERFORMANCE_SORTTESTHELPER_H
+ï»¿#ifndef INC_03_SELECTION_SORT_DETECT_PERFORMANCE_SORTTESTHELPER_H
 #define INC_03_SELECTION_SORT_DETECT_PERFORMANCE_SORTTESTHELPER_H
 #include <iostream>
 #include <ctime>
@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 namespace SortTestHelper {
-    // Éú³ÉÓĞn¸öÔªËØµÄËæ»úÊı×é,Ã¿¸öÔªËØµÄËæ»ú·¶Î§Îª[rangeL, rangeR]
+    // ç”Ÿæˆæœ‰nä¸ªå…ƒç´ çš„éšæœºæ•°ç»„,æ¯ä¸ªå…ƒç´ çš„éšæœºèŒƒå›´ä¸º[rangeL, rangeR]
     	int *generateRandomArray(int n, int rangeL, int rangeR) {
         assert(rangeL <= rangeR);
         int *arr = new int[n];
@@ -15,7 +15,7 @@ namespace SortTestHelper {
             arr[i] = rand() % (rangeR - rangeL + 1) + rangeL;
         return arr;
     }
-    // ´òÓ¡arrÊı×éµÄËùÓĞÄÚÈİ
+    // æ‰“å°arræ•°ç»„çš„æ‰€æœ‰å†…å®¹
     template<typename T>
     void printArray(T arr[], int n) {
 
@@ -25,7 +25,7 @@ namespace SortTestHelper {
 
         return;
     }
-    // ÅĞ¶ÏarrÊı×éÊÇ·ñÓĞĞò
+    // åˆ¤æ–­arræ•°ç»„æ˜¯å¦æœ‰åº
     template<typename T>
     bool isSorted(T arr[], int n) {
 
@@ -48,4 +48,4 @@ namespace SortTestHelper {
         return;
     }
 };
-#endif //INC_03_SELECTION_SORT_DETECT_PERFORMANCE_SORTTESTHELPER_H
+#endif 
