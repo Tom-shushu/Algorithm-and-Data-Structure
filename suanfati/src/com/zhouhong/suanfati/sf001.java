@@ -1,4 +1,6 @@
-public class Offer001 {
+package com.zhouhong.suanfati;
+
+public class sf001 {
     public static class  Node{
         public int value;
         public Node left;
@@ -112,24 +114,19 @@ public class Offer001 {
         int left = L;
         int right = R - 1;
         while (left <=    right){
-        //mid = (L+R) / 2    可能溢出
-        //mid = L + (R - L) / 2   除以2 ====  向右移一位
-        int mid = left + ((right - left) >> 1);
+            //mid = (L+R) / 2    可能溢出
+            //mid = L + (R - L) / 2   除以2 ====  向右移一位
+            int mid = left + ((right - left) >> 1);
 
-        if (posArr[mid] < posArr[R]){
-            M = mid;
-            left = mid + 1;
-        }else {
-            right = mid - 1;
+            if (posArr[mid] < posArr[R]){
+                M = mid;
+                left = mid + 1;
+            }else {
+                right = mid - 1;
+            }
         }
-    }
-    head.left = process2(posArr,L,M);
-    head.right = process2(posArr,M,R-1);
+        head.left = process2(posArr,L,M);
+        head.right = process2(posArr,M,R-1);
         return head;
-}
-
-
-
-
-
+    }
 }
