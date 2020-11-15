@@ -1,6 +1,6 @@
-package com.zhouhong.suanfati;
+package com.zhouhong.binarytree;
 
-public class sf001 {
+public class tree001 {
     public static class  Node{
         public int value;
         public Node left;
