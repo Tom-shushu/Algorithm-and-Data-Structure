@@ -23,6 +23,9 @@ package com.zhouhong.LeetCode;
 //
 // Related Topics 数组 双指针
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 双指针：
  */
@@ -43,4 +46,7 @@ public class LeetCode0026 {
         }
         return L+1;
     }
+
+
+
 }
