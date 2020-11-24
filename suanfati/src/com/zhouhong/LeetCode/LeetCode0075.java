@@ -26,11 +26,9 @@ import java.util.Arrays;
 // 👍 708 👎 0
 public class LeetCode0075 {
 
-/*
     public void sortColors1(int[] nums) {
         Arrays.sort(nums);
     }
-*/
 
     /**
      * 时间复杂度：O(n)   空间复杂度O(k)
@@ -53,6 +51,8 @@ public class LeetCode0075 {
         }
     }*/
 
+
+    //二，使用三路快排思想解决
     public void sortColors(int[] nums) {
         int L = -1;
         int R = nums.length;
