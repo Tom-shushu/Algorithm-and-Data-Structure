@@ -1,5 +1,4 @@
 package com.zhouhong.LeetCode;
-
 import java.util.Arrays;
 //给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。
 // 此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。
@@ -27,15 +26,17 @@ import java.util.Arrays;
 // 👍 708 👎 0
 public class LeetCode0075 {
 
+/*
     public void sortColors1(int[] nums) {
         Arrays.sort(nums);
     }
+*/
 
     /**
      * 时间复杂度：O(n)   空间复杂度O(k)
      * @param nums
      */
-    public void sortColors2(int[] nums) {
+/*    public void sortColors2(int[] nums) {
         int[] count = new int[3];//存放0,1,2数字的频率
         for (int i = 0; i < nums.length; i++) {
             count[nums[i]]++;
@@ -50,7 +51,29 @@ public class LeetCode0075 {
         for (int i = 0; i < count[2]; i++) {
             nums[index++] = 2;
         }
+    }*/
+
+    public void sortColors(int[] nums) {
+        int L = -1;
+        int R = nums.length;
+        for(int i = 0 ; i < R ; ){
+            if(nums[i] == 1){
+                i ++;
+            }
+            else if (nums[i] == 2){
+                R--;
+                swap(nums, i, R);
+            }
+            else{
+                L++;
+                swap(nums, L, i);
+                i++;
+            }
+        }
     }
-
-
+    private void swap(int[]nums,int i, int j){
+        int t = nums[i];
+        nums[i]= nums[j];
+        nums[j] = t;
+    }
 }
