@@ -18,7 +18,7 @@ import java.util.Arrays;
 // Related Topics 位运算 哈希表
 // 👍 1586 👎 0
 
-public class LeetCode136 {
+public class LeetCode0136 {
     public int singleNumber(int[] nums) {
         Arrays.sort(nums);
         int L = 0;

@@ -1,6 +1,6 @@
 package com.zhouhong.LeetCode;
 
-public class LeetCode144 {
+public class LeetCode0144 {
     public class ListNode {
         int val;
         ListNode next;
