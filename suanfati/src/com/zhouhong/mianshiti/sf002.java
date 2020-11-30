@@ -1,6 +1,5 @@
-package com.zhouhong.arrayandmatrix;
+package com.zhouhong.mianshiti;
 
-import javax.swing.plaf.IconUIResource;
 import java.util.Arrays;
 
 public class sf002 {

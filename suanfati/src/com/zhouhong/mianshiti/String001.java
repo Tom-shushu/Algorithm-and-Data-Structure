@@ -1,4 +1,4 @@
-package com.zhouhong.String;
+package com.zhouhong.mianshiti;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;

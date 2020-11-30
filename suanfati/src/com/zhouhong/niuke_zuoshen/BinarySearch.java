@@ -1,4 +1,4 @@
-package com.zhouhong.imooc;
+package com.zhouhong.niuke_zuoshen;
 
 public class BinarySearch {
     int binarySearch(int arr[] , int n , int target){
