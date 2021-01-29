@@ -15,14 +15,15 @@ import java.util.Arrays;
 // 你可以假设数组中所有元素都是非负整数，且数值在 32 位有符号整数范围内。
 // 请尝试在线性时间复杂度和空间复杂度的条件下解决此问题。
 // Related Topics 排序
-// 👍 325 👎 0
 
 public class LeetCode0164 {
 
     /**
      * 用左右指针
-     */
-/*    public int maximumGap(int[] nums) {
+     * @param nums
+     * @return
+     */	 
+    public int maximumGap1(int[] nums) {
         Arrays.sort(nums);
         if (nums.length < 2){
             return 0;
@@ -37,14 +38,14 @@ public class LeetCode0164 {
           }
         }
         return temp;
-    }*/
+    }
 
     /**
      * 直接用一次循环
      * @param nums
      * @return
      */
-    public int maximumGap(int[] nums) {
+    public int maximumGap2(int[] nums) {
         Arrays.sort(nums);
         if (nums.length < 2){
             return 0;

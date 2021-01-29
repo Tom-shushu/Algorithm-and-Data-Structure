@@ -7,9 +7,7 @@ import java.util.Stack;
  *写出一个程序，接受一个字符串，然后输出该字符串反转后的字符串。（字符串长度不超过1000）
  */
 public class String001 {
-    public static void main(String[] args) {
 
-    }
     //1.循环实现
      static void method1(){
         Scanner in = new Scanner(System.in);

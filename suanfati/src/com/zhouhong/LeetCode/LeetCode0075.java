@@ -21,20 +21,14 @@ import java.util.Arrays;
 // n == nums.length
 // 1 <= n <= 300
 // nums[i] 为 0、1 或 2
-//
 // Related Topics 排序 数组 双指针
-// 👍 708 👎 0
 public class LeetCode0075 {
-
-    public void sortColors1(int[] nums) {
-        Arrays.sort(nums);
-    }
-
     /**
+	 * 一、统计频率的方法实现
      * 时间复杂度：O(n)   空间复杂度O(k)
      * @param nums
      */
-/*    public void sortColors2(int[] nums) {
+    public void sortColors2(int[] nums) {
         int[] count = new int[3];//存放0,1,2数字的频率
         for (int i = 0; i < nums.length; i++) {
             count[nums[i]]++;
@@ -49,8 +43,7 @@ public class LeetCode0075 {
         for (int i = 0; i < count[2]; i++) {
             nums[index++] = 2;
         }
-    }*/
-
+    }
 
     //二，使用三路快排思想解决
     public void sortColors(int[] nums) {

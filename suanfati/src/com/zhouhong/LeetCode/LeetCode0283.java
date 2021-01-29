@@ -12,7 +12,6 @@ import java.util.List;
 // Related Topics 数组 双指针
 // 👍 860 👎 0
 public class LeetCode0283 {
-
     /**
      * 分为两种情况：
      * 1.第一位（即L指针指的地方为0）：R指针为0时，R右移，否则交换左右指针位置，左右指针同时右移；
